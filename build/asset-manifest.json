@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.68e5f882.css",
-    "main.js": "/static/js/main.4a37cee8.js",
+    "main.js": "/static/js/main.03080c3b.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/guitarHome.svg": "/static/media/guitarHome.ff17a2370945d811020c0556104231ff.svg",
     "static/media/bassTune.svg": "/static/media/bassTune.ebe423b34137beef596302408567f949.svg",
@@ -57,11 +57,11 @@
     "static/media/tabletBG2.svg": "/static/media/tabletBG2.0e4643e653394b32519e13dccc940447.svg",
     "static/media/padlock.svg": "/static/media/padlock.3d3886f910f3c094a13556b841bc65e3.svg",
     "main.68e5f882.css.map": "/static/css/main.68e5f882.css.map",
-    "main.4a37cee8.js.map": "/static/js/main.4a37cee8.js.map",
+    "main.03080c3b.js.map": "/static/js/main.03080c3b.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.68e5f882.css",
-    "static/js/main.4a37cee8.js"
+    "static/js/main.03080c3b.js"
   ]
 }
