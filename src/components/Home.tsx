@@ -81,7 +81,7 @@ const Home = () => {
           Toby J
         </Typography>
         <Typography variant="h3" style={{ textAlign: "center" }}>Front-End Developer</Typography>
-        <Typography variant="h3" style={{ textAlign: "center", marginTop: 4, fontSize: "1.6rem" }}>UX/Ui Designer </Typography>
+        <Typography variant="h3" style={{ textAlign: "center", marginTop: 4, fontSize: "1.6rem" }}>UX/Ui Designer</Typography>
 
         
       </Box>
