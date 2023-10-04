@@ -1,19 +1,33 @@
-import React from 'react';
+import React from "react";
 import { useState, useEffect, useMemo } from "react";
-import { Box, Grid, Button, useMediaQuery, Switch, IconButton } from "@mui/material";
-import CloseIcon from '@mui/icons-material/Close'; // <-- Added Close Icon import
+import {
+  Box,
+  Grid,
+  Button,
+  useMediaQuery,
+  Switch,
+  IconButton,
+} from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close"; // <-- Added Close Icon import
 import { Link, useNavigate } from "react-router-dom";
 import tabletBG from "../assets/largeSVG.svg";
 import bw from "../assets/bw.svg";
 import Modal from "./Modal";
 
-const colors = ["#FFE597", "#919FF8", "#FE7075", "#FE555D", "#5B71EA", "#FFCF51"];
+const colors = [
+  "#FFE597",
+  "#919FF8",
+  "#FE7075",
+  "#FE555D",
+  "#5B71EA",
+  "#FFCF51",
+];
 
 const Menu = () => {
   const smallScreen = useMediaQuery("(max-width: 600px)");
   const [bwMode, setBwMode] = useState(false);
   const [openModal, setOpenModal] = useState(false);
-  const navigate = useNavigate();  // <-- Added useHistory for navigation control
+  const navigate = useNavigate(); // <-- Added useHistory for navigation control
 
   const styles = useMemo(() => {
     const commonButtonStyles = {
@@ -61,33 +75,33 @@ const Menu = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        padding: "0 20px",
+        padding: "10px 20px",
       }}
     >
       {/* Close Button */}
-      <IconButton 
-          style={{ position: 'absolute', top: '10px', right: '10px' }} 
-          onClick={() => navigate(-1)}
-
+      <IconButton
+        style={{ position: "absolute", top: "10px", right: "10px" }}
+        onClick={() => navigate(-1)}
       >
-          <CloseIcon fontSize="large" />
-
+        <CloseIcon fontSize="large" />
       </IconButton>
 
       <Box position="absolute" top={0} left={0} padding={2} zIndex={1}>
-        <Switch checked={bwMode} onChange={() => setBwMode(!bwMode)} color="primary" />
+        <Switch
+          checked={bwMode}
+          onChange={() => setBwMode(!bwMode)}
+          color="primary"
+        />
       </Box>
-      <Grid container direction="column" spacing={4} alignItems="center">
+      <Grid container sm={12} md={6} direction="column" spacing={4} alignItems="center">
         <AboutMeButton styles={styles} />
         <DesignButton styles={styles} />
-       
       </Grid>
-      <Grid container direction="column" spacing={4} alignItems="center">
-        
+      <Grid container sm={12} md={6} direction="column" spacing={4} alignItems="center">
         <PortfolioButton styles={styles} />
         <ContactButton styles={styles} />
       </Grid>
-      
+
       {openModal && <Modal />}
     </Box>
   );
@@ -114,20 +128,30 @@ interface MenuItemProps extends ButtonProps {
 const MenuItem: React.FC<MenuItemProps> = ({ text, path, styles, onClick }) => (
   <Grid item xs={12} display="flex" flexDirection="column" alignItems="center">
     <Box bgcolor={colors[4]} sx={styles.box}>
-      <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-        {
-          onClick ? (
-            <Button variant="contained" color="primary" style={styles.button} onClick={onClick}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100%",
+        }}
+      >
+        {onClick ? (
+          <Button
+            variant="contained"
+            color="primary"
+            style={styles.button}
+            onClick={onClick}
+          >
+            {text}
+          </Button>
+        ) : (
+          <Link to={path!} style={{ textDecoration: "none" }}>
+            <Button variant="contained" color="primary" style={styles.button}>
               {text}
             </Button>
-          ) : (
-            <Link to={path!} style={{ textDecoration: "none" }}>
-              <Button variant="contained" color="primary" style={styles.button}>
-                {text}
-              </Button>
-            </Link>
-          )
-        }
+          </Link>
+        )}
       </Box>
     </Box>
   </Grid>

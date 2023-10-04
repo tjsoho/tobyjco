@@ -186,7 +186,7 @@ const Breath: React.FC = () => {
                     <br />
                     The overall experience should be soothing and immersive,
                     leaving visitors with a profound sense of serenity and a
-                    desire to explore the healing potential of nature..
+                    desire to explore the healing potential of nature.
                   </p>
                 </Box>
               </Grid>
