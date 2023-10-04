@@ -1,7 +1,7 @@
 import { useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import computerFrame from "../assets/breath1.png";
-import breath from "../assets/breath1.png";
+
 import { Link } from "react-router-dom";
 
 const ComputerOne = () => {
@@ -15,28 +15,22 @@ const ComputerOne = () => {
     "(min-width: 600px) and (max-width: 1000px)"
   );
 
-  let maxh;
   let padBot;
-  let marginBot;
+
   let height;
 
   if (smallScreen) {
-    maxh = "200px";
     height = "300px";
     padBot = "17px";
   } else if (mediumScreen) {
-    maxh = "220px";
     height = "300px";
     padBot = "19px";
   } else if (largeScreen) {
-    maxh = "338px";
     height = "400px";
     padBot = "30px";
   } else {
     height = "500px";
     padBot = "10px";
-    marginBot = "30px";
-    maxh = "380px";
   }
 
   return (
@@ -75,9 +69,7 @@ const ComputerOne = () => {
           },
         }}
       >
-        <Link to="/breath">
-          
-        </Link>
+        <Link to="/breath"></Link>
       </Box>
     </Box>
   );
