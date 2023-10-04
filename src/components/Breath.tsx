@@ -96,12 +96,13 @@ const Breath: React.FC = () => {
             <Grid container direction="column" spacing={2}>
               {/* Top Left box */}
               <Grid item sx={{ height: "40%", marginBottom: "20px" }}>
-                <Box paddingLeft="50px">
+                <Box paddingX="50px">
                   <h1
                     style={{
                       fontSize: fontSize,
                       fontWeight: 700,
                       color: "#090F09",
+                      textAlign: "center",
                     }}
                   >
                     Breath
@@ -111,6 +112,7 @@ const Breath: React.FC = () => {
                       fontSize: "1.5rem",
                       fontWeight: 400,
                       color: "#434943",
+                      textAlign: "center",
                     }}
                   >
                     Find Harmony in Nature with our mindfulness retreats.

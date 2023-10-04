@@ -95,12 +95,13 @@ const Breath: React.FC = () => {
             <Grid container direction="column" spacing={2}>
               {/* Top Left box */}
               <Grid item sx={{ height: "40%", marginBottom: "20px" }}>
-                <Box paddingLeft="50px">
+                <Box paddingX="50px">
                   <h1
                     style={{
                       fontSize: fontSize,
                       fontWeight: 700,
                       color: "#032544",
+                      textAlign: "center",
                     }}
                   >
                     Project Empower
@@ -110,6 +111,7 @@ const Breath: React.FC = () => {
                       fontSize: "1.5rem",
                       fontWeight: 400,
                       color: "#2E5579",
+                      textAlign: "center",
                     }}
                   >
                     Breaking down the stigma of 'Finance is boring.'

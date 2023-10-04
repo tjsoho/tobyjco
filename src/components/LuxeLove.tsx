@@ -95,12 +95,13 @@ const LuxeLove: React.FC = () => {
             <Grid container direction="column" spacing={2}>
               {/* Top Left box */}
               <Grid item sx={{ height: "40%", marginBottom: "20px" }}>
-                <Box paddingLeft="50px">
+                <Box paddingX="50px">
                   <h1
                     style={{
                       fontSize: fontSize,
                       fontWeight: 700,
                       color: "#4E371F",
+                      textAlign: "center",
                     }}
                   >
                     Loved Luxe
@@ -110,6 +111,7 @@ const LuxeLove: React.FC = () => {
                       fontSize: "1.5rem",
                       fontWeight: 400,
                       color: "#8B6F51",
+                      textAlign: "center",
                     }}
                   >
                     A collection of luxurious and decadent treats.

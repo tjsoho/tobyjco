@@ -48,7 +48,7 @@ const ContactForm: React.FC = () => {
         <Typography variant="h2" gutterBottom>
           Let's Chat
         </Typography>
-        <Typography variant="h5" style={{ textAlign: 'center' }} gutterBottom>
+        <Typography variant="h5" style={{ textAlign: 'center', fontSize: '20px' }} gutterBottom>
           Well hello there! Thanks for dropping by. Guess what?! You're just one step away from chatting in person! I know, super exciting.<br /><br /> So what are you waiting for? <br />Fill in those blanks and let's have a real-life conversation.<br /><br /> It'll be fun 😎
         </Typography>
       </Grid>
