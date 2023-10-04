@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Grid, Button } from '@mui/material';
-import Chev1 from '../assets/chevh.jpg';
+import Chev1 from '../assets/chevh.png';
 import { Link } from "react-router-dom";
 import ChevGrid from './ChevGrid';
 import chevbg from '../assets/chevbg4.svg';

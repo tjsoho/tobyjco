@@ -3,7 +3,7 @@ import { Box, Grid, Button } from '@mui/material';
 import ImageGrid from './ImageGrid';
 import luxBG from '../assets/luxBG.svg';
 import { Link } from "react-router-dom";
-import lux1 from '../assets/lux1.jpg';
+import lux1 from '../assets/lux1.png';
 
 const LuxeLove: React.FC = () => {
     return (

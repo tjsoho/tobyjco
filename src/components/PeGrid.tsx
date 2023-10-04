@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, useMediaQuery, useTheme } from '@mui/material';
 import pe1 from '../assets/pe1.png';
-import pe2 from '../assets/pe2.jpg';
+import pe2 from '../assets/pe2.png';
 import pe3 from '../assets/pe3.png';
 import pe4 from '../assets/pe4.png';
 

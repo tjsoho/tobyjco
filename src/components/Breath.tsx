@@ -3,7 +3,7 @@ import { Box, Grid, Button } from "@mui/material";
 import breathbg from "../assets/breathBG.svg";
 import { Link } from "react-router-dom";
 import BreathGrid from "./BreathGrid";
-import b1 from "../assets/breath1.jpg";
+import b1 from "../assets/breath1.png";
 
 const Breath: React.FC = () => {
   return (

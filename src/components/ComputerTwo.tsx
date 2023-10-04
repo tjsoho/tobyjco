@@ -1,7 +1,7 @@
 import { useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
-import computerFrame from "../assets/laptop.svg";
-import breath from "../assets/breath.jpg";
+import computerFrame from "../assets/breath1.png";
+import breath from "../assets/breath1.png";
 import { Link } from "react-router-dom";
 
 const ComputerOne = () => {
@@ -36,7 +36,7 @@ const ComputerOne = () => {
     height = "500px";
     padBot = "10px";
     marginBot = "30px";
-    maxh = "420px";
+    maxh = "380px";
   }
 
   return (
@@ -76,15 +76,7 @@ const ComputerOne = () => {
         }}
       >
         <Link to="/breath">
-          <img
-            src={breath}
-            alt="shadow"
-            style={{
-              maxHeight: maxh,
-              marginBottom: marginBot,
-              borderRadius: "5px",
-            }}
-          />
+          
         </Link>
       </Box>
     </Box>

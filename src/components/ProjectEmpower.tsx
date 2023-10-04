@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Grid, Button } from '@mui/material';
 import { Link } from "react-router-dom";
-import PE from '../assets/pe5.jpg';
+import PE from '../assets/pe5.png';
 import PeGrid from './PeGrid';
 import peBG from '../assets/peBG.svg';
 

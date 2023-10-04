@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, useMediaQuery, useTheme } from "@mui/material";
-import chev1 from "../assets/chev1.jpg";
+import chev1 from "../assets/chev1.png";
 import chev2 from "../assets/chev2.jpg";
 import chev3 from "../assets/chev3.jpg";
 import chev4 from "../assets/chev4.jpg";
