@@ -2,7 +2,7 @@ import { useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import { Link } from "react-router-dom";
 import computerFrame from "../assets/pe5.png";
-import PE from "../assets/PE-1.jpg";
+
 
 const ComputerOne = () => {
   const smallScreen = useMediaQuery(

@@ -1,7 +1,7 @@
 import { useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import computerFrame from "../assets/lux1.png";
-import ll1 from "../assets/lovedLux1-1.jpg";
+
 import { Link } from "react-router-dom";
 
 const ComputerOne = () => {
