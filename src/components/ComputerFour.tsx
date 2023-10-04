@@ -1,7 +1,7 @@
 import { useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import computerFrame from "../assets/laptop.svg";
-import chev from "../assets/Chevell.svg";
+import chev from "../assets/Chevell-1.jpg";
 import { Link } from "react-router-dom";
 
 const ComputerOne = () => {

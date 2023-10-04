@@ -1,9 +1,9 @@
 import React from 'react';
 import { Box, useMediaQuery, useTheme } from '@mui/material';
 import b2 from '../assets/breath2.png';
-import b3 from '../assets/breath3.png';
-import b4 from '../assets/breath4.png';
-import b5 from '../assets/breath 5.png';
+import b3 from '../assets/breath3.jpg';
+import b4 from '../assets/breath4.jpg';
+import b5 from '../assets/breath-5.jpg';
 
 
 const imageArray = [

@@ -1,9 +1,9 @@
 import { Box } from "@mui/system";
 import React from "react";
 import mobileFrame from "../assets/mobileshadow.svg";
-import guitarHome from "../assets/guitarHome.svg";
-import guitarTune from "../assets/guitarTune.svg";
-import bassTune from "../assets/bassTune.svg";
+import guitarHome from "../assets/guitarHome.png";
+import guitarTune from "../assets/guitarTune.png";
+import bassTune from "../assets/bassTune.png";
 
 const MobileF = () => {
   return (

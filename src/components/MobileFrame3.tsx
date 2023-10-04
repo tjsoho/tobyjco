@@ -1,7 +1,7 @@
 import { Box } from "@mui/system";
 import mobileFrame from "../assets/mobileshadow.svg";
 import bsp1 from "../assets/bsp1.svg";
-import bsp2 from "../assets/bsp2.svg";
+import bsp2 from "../assets/bsp2.png";
 import bsp3 from "../assets/bsp3.svg";
 
 const MobileF = () => {

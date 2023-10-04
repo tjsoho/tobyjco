@@ -1,7 +1,7 @@
 import { useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import computerFrame from "../assets/laptop.svg";
-import breath from "../assets/breath.svg";
+import breath from "../assets/breath.jpg";
 import { Link } from "react-router-dom";
 
 const ComputerOne = () => {

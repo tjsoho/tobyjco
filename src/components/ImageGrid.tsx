@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, useMediaQuery, useTheme } from '@mui/material';
-import lux1 from '../assets/lux1.png';
+import lux1 from '../assets/lux1.jpg';
 import lux2 from '../assets/lux2.png';
 import lux3 from '../assets/lux3.png';
 import lux4 from '../assets/lux4.png';
