@@ -9,7 +9,6 @@ import {
 import tabletBG from "../assets/largeSVG.svg";
 import travel from "../assets/travel.svg";
 import weather from "../assets/weather.svg";
-import note from "../assets/notes.svg";
 import password from "../assets/padlock.svg";
 import { Link } from "react-router-dom";
 import bw from "../assets/bw.svg";
