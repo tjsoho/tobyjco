@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Grid, Typography, TextField, Button } from "@mui/material";
-import { useNavigate } from "react-router-dom"; // Import React Router's useHistory
+import { Grid, Typography, TextField, Button, IconButton } from "@mui/material";
+import { useNavigate } from "react-router-dom";
+import CloseIcon from '@mui/icons-material/Close'; // Import the CloseIcon
 
 const ContactForm: React.FC = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false); // State to track if the form is submitted
-  const navigate = useNavigate(); // Initialize history from React Router
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -18,7 +19,7 @@ const ContactForm: React.FC = () => {
     if (response.ok) {
       // Handle successful form submission here
       console.log("Form submitted successfully!");
-      setIsSubmitted(true); // Set the state to true when the form is successfully submitted
+      setIsSubmitted(true);
       form.reset();
 
       // Redirect to the home page after a successful submission (assuming "/home" is your home page route)
@@ -48,7 +49,7 @@ const ContactForm: React.FC = () => {
           Let's Chat
         </Typography>
         <Typography variant="h5" style={{ textAlign: 'center' }} gutterBottom>
-          I would love to hear what you are working on and how I could help.
+          Well hello there! Thanks for dropping by. Guess what?! You're just one step away from chatting in person! I know, super exciting.<br /><br /> So what are you waiting for? <br />Fill in those blanks and let's have a real-life conversation.<br /><br /> It'll be fun 😎
         </Typography>
       </Grid>
       <Grid
@@ -65,6 +66,14 @@ const ContactForm: React.FC = () => {
           alignItems: "center",
         }}
       >
+        {/* Close Button */}
+        <IconButton 
+          style={{ position: 'absolute', top: '10px', right: '10px' }} 
+          onClick={() => navigate(-1)}
+        >
+          <CloseIcon fontSize="large" />
+        </IconButton>
+
         <form onSubmit={handleSubmit}>
           <input
             type="hidden"
@@ -72,8 +81,8 @@ const ContactForm: React.FC = () => {
             value="d20378cd-7df6-4008-ad81-8aab72bd3724" // Replace with your actual Access Key
           />
           <Typography variant="h3" align='center' gutterBottom>
-          Contact Form
-        </Typography>
+            Contact Form
+          </Typography>
           <TextField
             fullWidth
             label="Full Name"

@@ -80,6 +80,11 @@ const Menu = () => {
       <Grid container direction="column" spacing={4} alignItems="center">
         <AboutMeButton styles={styles} />
         <DesignButton styles={styles} />
+       
+      </Grid>
+      <Grid container direction="column" spacing={4} alignItems="center">
+        
+        <PortfolioButton styles={styles} />
         <ContactButton styles={styles} />
       </Grid>
       
@@ -144,6 +149,9 @@ const DesignButton: React.FC<ButtonProps> = ({ styles }) => (
 );
 const ContactButton: React.FC<ButtonProps> = ({ styles }) => (
   <MenuItem text="CONTACT" path="/contactform" styles={styles} />
+);
+const PortfolioButton: React.FC<ButtonProps> = ({ styles }) => (
+  <MenuItem text="CODING Projects" path="/portfolio" styles={styles} />
 );
 
 // const DownloadButton: React.FC<ButtonProps> = ({ styles }) => (

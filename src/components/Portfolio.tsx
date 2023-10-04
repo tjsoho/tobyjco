@@ -200,35 +200,7 @@ const Portfolio = () => {
                   </Box>
                 </Box>
               </div>
-              {/* CARD 3 */}
-              <div style={{ margin: "0" }}>
-                <Box sx={glassMorphismStyles}>
-                  <Box
-                    sx={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      margin: "0" 
-                    }}
-                  >
-                    <img src={note} alt="" style={imageStyle} />
-                    <Typography
-                      variant="h4"
-                      sx={{ color: "white", textAlign: "center" }}
-                    >
-                      The Travel Companion
-                    </Typography>
-
-                    <Link
-                      to="https://sheltered-caverns-17258.herokuapp.com/"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <Button style={buttonStyle}>LET'S GO</Button>
-                    </Link>
-                  </Box>
-                </Box>
-              </div>
+             
 
               {/* CARD 4 */}
               <div style={{ margin: "0" }}>
