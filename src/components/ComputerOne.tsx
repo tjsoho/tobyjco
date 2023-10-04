@@ -1,6 +1,6 @@
 import { useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
-import computerFrame from "../assets/laptop.svg";
+import computerFrame from "../assets/lux1.png";
 import ll1 from "../assets/lovedLux1-1.jpg";
 import { Link } from "react-router-dom";
 
@@ -15,28 +15,22 @@ const ComputerOne = () => {
     "(min-width: 600px) and (max-width: 1000px)"
   );
 
-  let maxh;
   let padBot;
-  let marginBot;
+
   let height;
 
   if (smallScreen) {
-    maxh = "200px";
     height = "300px";
     padBot = "17px";
   } else if (mediumScreen) {
-    maxh = "220px";
     height = "300px";
     padBot = "19px";
   } else if (largeScreen) {
-    maxh = "338px";
     height = "400px";
     padBot = "30px";
   } else {
     height = "500px";
     padBot = "30px";
-    marginBot = "10px";
-    maxh = "420px";
   }
 
   return (
@@ -75,17 +69,7 @@ const ComputerOne = () => {
           },
         }}
       >
-        <Link to="/luxelove">
-          <img
-            src={ll1}
-            alt="shadow"
-            style={{
-              maxHeight: maxh,
-              marginBottom: marginBot,
-              borderRadius: "5px",
-            }}
-          />
-        </Link>
+        <Link to="/luxelove"></Link>
       </Box>
     </Box>
   );

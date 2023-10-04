@@ -17,7 +17,7 @@ const UiDesigns = () => {
 
   let bheight;
   if (smallScreen) {
-    bheight = "283dvh";
+    bheight = "283vh";
   } else {
     bheight = "100vh";
   }

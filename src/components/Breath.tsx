@@ -1,11 +1,16 @@
 import React from "react";
-import { Box, Grid, Button } from "@mui/material";
+import { Box, Grid, Button, useMediaQuery } from "@mui/material";
 import breathbg from "../assets/breathBG.svg";
 import { Link } from "react-router-dom";
 import BreathGrid from "./BreathGrid";
 import b1 from "../assets/breath1.png";
 
 const Breath: React.FC = () => {
+  
+  const isSmallScreen = useMediaQuery("(max-width: 600px)");
+  const fontSize = isSmallScreen ? "3rem" : "6rem";
+  const top = isSmallScreen ? 80 : 50;
+  
   return (
     <Box
       height="100vh"
@@ -75,7 +80,7 @@ const Breath: React.FC = () => {
       <Box
         sx={{
           position: "absolute",
-          top: 50,
+          top: top,
           left: 0,
           right: 0,
           bottom: 0,
@@ -94,7 +99,7 @@ const Breath: React.FC = () => {
                 <Box paddingLeft="50px">
                   <h1
                     style={{
-                      fontSize: "6rem",
+                      fontSize: fontSize,
                       fontWeight: 700,
                       color: "#090F09",
                     }}
@@ -151,7 +156,9 @@ const Breath: React.FC = () => {
                     padding: "50px",
                   }}
                 >
+                  {!isSmallScreen && (
                   <img src={b1} alt="lux1" style={{ width: "90%" }} />
+                  )}
                 </Box>
               </Grid>
               {/* Bottom Right box */}
@@ -162,6 +169,7 @@ const Breath: React.FC = () => {
                       fontSize: "3rem",
                       fontWeight: 700,
                       color: "#090F09",
+                      marginBottom: '25px'
                     }}
                   >
                     The Project
@@ -171,6 +179,7 @@ const Breath: React.FC = () => {
                       fontSize: "1.2rem",
                       fontWeight: 400,
                       color: "#434943",
+                      marginBottom: '25px'
                     }}
                   >
                     Breath is a tranquil retreat deeply rooted in nature,

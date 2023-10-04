@@ -1,12 +1,17 @@
 import React from 'react';
-import { Box, Grid, Button } from '@mui/material';
+import { Box, Grid, Button, useMediaQuery } from '@mui/material';
 import Chev1 from '../assets/chevh.png';
 import { Link } from "react-router-dom";
 import ChevGrid from './ChevGrid';
 import chevbg from '../assets/chevbg4.svg';
 
 const Chevell: React.FC = () => {
-    return (
+    
+  const isSmallScreen = useMediaQuery("(max-width: 600px)");
+  const fontSize = isSmallScreen ? "3rem" : "6rem";
+  const top = isSmallScreen ? 80 : 50;
+  
+  return (
         <Box 
             height="100vh" 
             width="100vw"
@@ -77,7 +82,7 @@ const Chevell: React.FC = () => {
             <Box
                 sx={{
                     position: "absolute",
-                    top: 50,
+                    top: top,
                     left: 0,
                     right: 0,
                     bottom: 0,
@@ -94,7 +99,7 @@ const Chevell: React.FC = () => {
                             {/* Top Left box */}
                             <Grid item sx={{ height: '40%', marginBottom: "20px" }}>
                                 <Box paddingLeft="50px">
-                                    <h1 style={{ fontSize: '5rem', fontWeight: 700, color: 'black', }}>Chevell</h1>
+                                    <h1 style={{ fontSize: fontSize, fontWeight: 700, color: 'black', }}>Chevell</h1>
                                     <p style={{ fontSize: '1.5rem', fontWeight: 400, color: 'gray', }}>Effortlessly stylish wedding photography.</p>
                                 </Box>
                             </Grid>
@@ -121,14 +126,16 @@ const Chevell: React.FC = () => {
                                     justifyContent: "center",
                                     padding: "50px"
                                 }}>
+                                   {!isSmallScreen && (
                                     <img src={Chev1} alt="lux1" style={{ width: '90%' }} />
+                                    )}
                                 </Box>
                             </Grid>
                             {/* Bottom Right box */}
                             <Grid item sx={{ height: '70%' }}>
                                 <Box sx={{paddingX: "20px"}}>
-                                    <h2 style={{ fontSize: '3rem', fontWeight: 700, color: 'black', }}>The Project</h2>
-                                    <p style={{ fontSize: '1.2rem', fontWeight: 400, color: 'gray', }}>Chevell is a boutique wedding photography studio inspired by the style and timeless fashion of Vogue magazine.
+                                    <h2 style={{ fontSize: '3rem', fontWeight: 700, color: 'black', marginBottom: "25px",}}>The Project</h2>
+                                    <p style={{ fontSize: '1.2rem', fontWeight: 400, color: 'gray', marginBottom: "25px", }}>Chevell is a boutique wedding photography studio inspired by the style and timeless fashion of Vogue magazine.
                                     <br />
                                     <br />
                                     The website is a stylish, sophisticated yet simplistic design with a focus on showcasing the talent of Chevell photography.
